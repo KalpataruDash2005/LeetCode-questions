@@ -24,10 +24,10 @@ class Solution {
         int n = queue.size();
         List <Integer> list = new ArrayList<>();
         for(int i = 1;i<= n;i++){
-            TreeNode person = queue.remove();
-            list.add(person.val);
-            if(person.left != null) queue.add(person.left);
-            if(person.right != null) queue.add(person.right);
+            TreeNode temp = queue.remove();
+            list.add(temp.val);
+            if(temp.left != null) queue.add(temp.left);
+            if(temp.right != null) queue.add(temp.right);
         }
         biglist.add(list);
         }
