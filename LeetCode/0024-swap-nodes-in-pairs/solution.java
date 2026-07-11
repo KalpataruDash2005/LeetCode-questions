@@ -23,6 +23,6 @@ class Solution {
             second.next = first;
             temp = first;
         }
-        return dummy.next;
+        return dummy.next; 
     }
 }
