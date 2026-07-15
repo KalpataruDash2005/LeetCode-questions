@@ -5,7 +5,7 @@ class Solution {
         prime[0] = prime[1] = false;
         for (int i = 2; i * i <= right; i++)
             if (prime[i])
-                for (int j = i * i; j <= right; j += i) prime[j] = false;
+        for (int j = i * i; j <= right; j += i) prime[j] = false;
         int pre = -1, d = Integer.MAX_VALUE, r1 = -1, r2 = -1;
         for (int i = Math.max(2, left); i <= right; i++) {
             if (prime[i]) {
