@@ -1,17 +1,15 @@
 class Solution {
-    public int lengthOfLongestSubstring(String s) {
-        char []ch = s.toCharArray();
-        int left = 0;
-        int res = 0;
-        int []count = new int [128]; 
-        for(int right = 0 ; right<ch.length;right++){
-            count[ch[right]]++;
-            while(count[ch[right]]>1){
-                count[ch[left]]--;
-                left++;
+    public int[] twoSum(int[] nums, int target) {
+       Map<Integer, Integer> map = new HashMap<>();
+        for (int i = 0; i < nums.length; i++) {
+            int second = target - nums[i];
+            if (map.containsKey(second)) {
+                return new int[] { map.get(second), i };
             }
-            res =Math.max(res,right-left+1);
-        } 
-        return res;
+            map.put(nums[i], i);
+        }
+        return new int[] {}; 
     }
 }
+
+
