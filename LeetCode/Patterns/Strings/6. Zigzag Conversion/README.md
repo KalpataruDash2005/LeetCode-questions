@@ -8,8 +8,8 @@
 String
 
 ### 🚀 Performance
-- **Runtime:** 7 ms
-- **Memory:** 46.9 MB
+- **Runtime:** 5 ms
+- **Memory:** 46.6 MB
 
 ---
 
