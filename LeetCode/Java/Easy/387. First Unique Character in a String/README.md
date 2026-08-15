@@ -1,6 +1,6 @@
 # 📝 387. First Unique Character in a String (LeetCode)
 
-🔗 [Problem Link](https://leetcode.com/problems/first-unique-character-in-a-string)
+🔗 [Problem Link](https://leetcode.com/problems/first-unique-character-in-a-string/)
 
 ![Difficulty](https://img.shields.io/badge/Difficulty-Easy-brightgreen) ![Language](https://img.shields.io/badge/Language-Java-blue)
 
@@ -8,8 +8,8 @@
 Hash Table, String, Queue, Counting
 
 ### 🚀 Performance
-- **Runtime:** N/A
-- **Memory:** N/A
+- **Runtime:** 6 ms
+- **Memory:** 47 MB
 
 ---
 
