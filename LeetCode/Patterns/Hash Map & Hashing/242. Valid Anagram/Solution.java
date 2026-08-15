@@ -12,7 +12,9 @@ class Solution {
             freq[ch-'a']--;
         }
 
-        for(int i = 0; i<t.length() ; i++){
+        int length = Math.max(t.length(),s.length());
+
+        for(int i = 0; i<length; i++){
            if(freq[i]!=0){
             return false;
            }
