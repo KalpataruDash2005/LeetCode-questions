@@ -9,8 +9,21 @@ class Solution {
             return max;
         }
         if (k == 1) {
-            return -1;
+        int ans = -1;
+    for (int i = 0; i < n; i++) {
+        int count = 0;
+        for (int j = 0; j < n; j++) {
+            if (nums[i] == nums[j]) {
+                count++;
+            }
         }
+        if (count == 1) {
+            ans = Math.max(ans, nums[i]);
+        }
+    }
+
+    return ans;
+}
         int first = nums[0];
         int last = nums[n - 1];
         int countFirst = 0;
@@ -31,5 +44,6 @@ class Solution {
             ans = Math.max(ans, last);
         }
         return ans;
+
     }
 }
