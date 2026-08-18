@@ -1,6 +1,5 @@
 class Solution {
     public String multiply(String num1, String num2) {
-
         int[] nums1 = new int[num1.length()];
         int[] nums2 = new int[num2.length()];
 
@@ -12,50 +11,33 @@ class Solution {
             nums2[i] = num2.charAt(i) - '0';
         }
 
-        int num11 = 0;
+        int[] proa = new int[num1.length() + num2.length()];
 
-        for (int i = 0; i < num1.length(); i++) {
-            num11 = num11 * 10;
-            num11 += nums1[i];
-        }
+        for (int i = nums1.length - 1; i >= 0; i--) {
+            for (int j = nums2.length - 1; j >= 0; j--) {
+                int pro = nums1[i] * nums2[j];
+                int index = i + j + 1;
 
-        int num12 = 0;
+                pro += proa[index];
 
-        for (int i = 0; i < num2.length(); i++) {
-            num12 = num12 * 10;
-            num12 += nums2[i];
-        }
-
-        int pro = num11 * num12;
-
-        if (pro == 0) {
-            return "0";
-        }
-
-        int count = 0;
-        int temp = pro;
-
-        while (temp != 0) {
-            temp /= 10;
-            count++;
-        }
-
-        int[] proa = new int[count];
-
-        int index = count - 1;
-
-        while (pro != 0) {
-            proa[index] = pro % 10;
-            pro /= 10;
-            index--;
+                proa[index] = pro % 10;
+                proa[index - 1] += pro / 10;
+            }
         }
 
         StringBuilder ans = new StringBuilder();
 
-        for (int i = 0; i < proa.length; i++) {
-            ans.append(proa[i]);
+        int i = 0;
+
+        while (i < proa.length && proa[i] == 0) {
+            i++;
         }
 
-        return ans.toString();
+        while (i < proa.length) {
+            ans.append(proa[i]);
+            i++;
+        }
+
+        return ans.length() == 0 ? "0" : ans.toString();
     }
 }
