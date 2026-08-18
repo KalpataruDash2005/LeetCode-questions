@@ -9,7 +9,7 @@ class Solution {
             return max;
         }
         if (k == 1) {
-            return ;
+            retu
         }
         int first = nums[0];
         int last = nums[n - 1];
