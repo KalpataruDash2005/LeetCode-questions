@@ -8,7 +8,7 @@
 Array, String
 
 ### 🚀 Performance
-- **Runtime:** 109 ms
+- **Runtime:** 1 ms
 - **Memory:** 47 MB
 
 ---
