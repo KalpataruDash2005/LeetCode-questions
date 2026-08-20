@@ -1,0 +1,14 @@
+            if (entry.getValue() > maxCount) {
+                maxCount = entry.getValue();
+                maxWord = entry.getKey();
+            }
+        }
+        
+        return maxWord;
+    }
+}
+        for (Map.Entry<String, Integer> entry : map.entrySet()) {
+        
+        int maxCount = 0;
+        String maxWord = "";
+        
