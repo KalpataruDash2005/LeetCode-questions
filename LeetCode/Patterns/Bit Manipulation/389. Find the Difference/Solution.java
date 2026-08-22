@@ -9,7 +9,8 @@ class Solution {
                 }
             }
             if (!flag) {
-                res = t.charAt(i);
+                res = t.charAt(i); 
+
             }
         }
         return res;
