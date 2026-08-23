@@ -8,8 +8,8 @@
 Hash Table, String, Bit Manipulation, Sorting
 
 ### 🚀 Performance
-- **Runtime:** N/A
-- **Memory:** N/A
+- **Runtime:** 38 ms
+- **Memory:** 47.7 MB
 
 ---
 
