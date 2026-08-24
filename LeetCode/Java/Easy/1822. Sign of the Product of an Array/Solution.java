@@ -1,6 +1,6 @@
 class Solution {
     public int arraySign(int[] nums) {
-        i pro = 1;
+        double pro = 1;
         for(int i = 0 ; i < nums.length ; i++){
             pro = pro * nums[i];
         }
