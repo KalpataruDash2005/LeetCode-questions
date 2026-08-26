@@ -1,31 +1,28 @@
 class Solution {
+
     public long maximumSubarraySum(int[] nums, int k) {
-        long sum = 0;
         long ans = 0;
+        long currentSum = 0;
+        int begin = 0;
+        int end = 0;
 
-        HashSet<Integer> set = new HashSet<>();
+        HashMap<Integer, Integer> numToIndex = new HashMap<>();
 
-        for (int i = 0; i < k; i++) {
-            sum += nums[i];
-            set.add(nums[i]);
-        }
-
-        if (set.size() == k) {
-            ans = sum;
-        }
-
-        for (int i = k; i < nums.length; i++) {
-            sum += nums[i];
-            sum -= nums[i - k];
-
-            set.remove(nums[i - k]);
-            set.add(nums[i]);
-
-            if (set.size() == k) {
-                ans = Math.max(ans, sum);
+        while (end < nums.length) {
+            int currNum = nums[end];
+            int lastOccurrence = numToIndex.getOrDefault(currNum, -1);
+            // if current window already has number or if window is too big, adjust window
+            while (begin <= lastOccurrence || end - begin + 1 > k) {
+                currentSum -= nums[begin];
+                begin++;
             }
+            numToIndex.put(currNum, end);
+            currentSum += nums[end];
+            if (end - begin + 1 == k) {
+                ans = Math.max(ans, currentSum);
+            }
+            end++;
         }
-
         return ans;
     }
 }
