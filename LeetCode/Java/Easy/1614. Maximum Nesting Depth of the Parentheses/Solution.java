@@ -6,7 +6,7 @@ class Solution {
             char ch = s.charAt(i);
             if(ch == '('){
                 count++;
-                ans = count;
+                ans = Math.max(ans, count);
             }
             if(ch == ')'){
                 count--;
