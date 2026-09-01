@@ -1,6 +1,6 @@
 # 📝 682. Baseball Game (LeetCode)
 
-🔗 [Problem Link](https://leetcode.com/problems/baseball-game/?envType=problem-list-v2&envId=prshgx6i)
+🔗 [Problem Link](https://leetcode.com/problems/baseball-game/)
 
 ![Difficulty](https://img.shields.io/badge/Difficulty-Easy-brightgreen) ![Language](https://img.shields.io/badge/Language-Java-blue)
 
@@ -8,8 +8,8 @@
 Array, Stack, Simulation
 
 ### 🚀 Performance
-- **Runtime:** N/A
-- **Memory:** N/A
+- **Runtime:** 3 ms
+- **Memory:** 43.8 MB
 
 ---
 
