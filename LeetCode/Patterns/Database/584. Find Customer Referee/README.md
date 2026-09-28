@@ -1,6 +1,6 @@
 # 📝 584. Find Customer Referee (LeetCode)
 
-🔗 [Problem Link](https://leetcode.com/problems/find-customer-referee/?envType=study-plan-v2&envId=top-sql-50)
+🔗 [Problem Link](https://leetcode.com/problems/find-customer-referee/)
 
 ![Difficulty](https://img.shields.io/badge/Difficulty-Easy-brightgreen) ![Language](https://img.shields.io/badge/Language-SQL-blue)
 
