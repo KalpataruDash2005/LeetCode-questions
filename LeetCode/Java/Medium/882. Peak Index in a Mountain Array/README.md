@@ -8,8 +8,8 @@
 Array, Binary Search, Ternary Search
 
 ### 🚀 Performance
-- **Runtime:** 0 ms
-- **Memory:** 80.4 MB
+- **Runtime:** N/A
+- **Memory:** N/A
 
 ---
 
