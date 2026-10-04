@@ -1,6 +1,6 @@
 # 📝 678. Valid Parenthesis String (LeetCode)
 
-🔗 [Problem Link](https://leetcode.com/problems/valid-parenthesis-string)
+🔗 [Problem Link](https://leetcode.com/problems/valid-parenthesis-string/)
 
 ![Difficulty](https://img.shields.io/badge/Difficulty-Medium-orange) ![Language](https://img.shields.io/badge/Language-Java-blue)
 
@@ -8,8 +8,8 @@
 String, Dynamic Programming, Stack, Greedy, Bracket Sequences
 
 ### 🚀 Performance
-- **Runtime:** N/A
-- **Memory:** N/A
+- **Runtime:** 64 ms
+- **Memory:** 43.1 MB
 
 ---
 
