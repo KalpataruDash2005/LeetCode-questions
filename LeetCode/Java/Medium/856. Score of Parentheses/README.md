@@ -1,6 +1,6 @@
 # 📝 856. Score of Parentheses (LeetCode)
 
-🔗 [Problem Link](https://leetcode.com/problems/score-of-parentheses)
+🔗 [Problem Link](https://leetcode.com/problems/score-of-parentheses/?envType=daily-question&envId=2026-10-05)
 
 ![Difficulty](https://img.shields.io/badge/Difficulty-Medium-orange) ![Language](https://img.shields.io/badge/Language-Java-blue)
 

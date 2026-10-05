@@ -1,13 +1,17 @@
 class Solution {
     public int scoreOfParentheses(String s) {
-        int i = 0;
-        int count = 0;
-        while(i < s.length()){
-           if(s.charAt(i) == '('){
-             count++;
-           }
-           i++;
+        int depth = 0;
+        int score = 0;
+        for (int i = 0; i < s.length(); i++) {
+            if (s.charAt(i) == '(') {
+                depth++;
+            } else {
+                depth--;
+                if (s.charAt(i - 1) == '(') {
+                    score += (1 << depth);
+                }
+            }
         }
-        return count;
+        return score;
     }
 }
