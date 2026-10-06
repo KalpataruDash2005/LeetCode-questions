@@ -1,6 +1,6 @@
 # 📝 921. Minimum Add to Make Parentheses Valid (LeetCode)
 
-🔗 [Problem Link](https://leetcode.com/problems/minimum-add-to-make-parentheses-valid/?envType=daily-question&envId=2026-10-06)
+🔗 [Problem Link](https://leetcode.com/problems/minimum-add-to-make-parentheses-valid)
 
 ![Difficulty](https://img.shields.io/badge/Difficulty-Medium-orange) ![Language](https://img.shields.io/badge/Language-Java-blue)
 
