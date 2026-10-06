@@ -4,8 +4,11 @@ class Solution {
         for(int i = 0;i<s.length();i++){
             if(s.charAt(i) == '('){
                 count ++;
+            } else{
+                count--;
             }
         }
+        if(count<0) return 1;
         return count;
     }
 }
