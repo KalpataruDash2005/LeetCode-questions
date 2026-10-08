@@ -5,14 +5,12 @@ class Solution {
         
         for (char c : s.toCharArray()) {
             if (c == '(') {
-                // If opened > 0, it is not the outermost '('
                 if (opened > 0) {
                     result.append(c);
                 }
                 opened++;
             } else {
                 opened--;
-                // If opened > 0, it is not the outermost ')'
                 if (opened > 0) {
                     result.append(c);
                 }
