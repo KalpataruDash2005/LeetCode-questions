@@ -1,15 +1,15 @@
-class Solution {
-    public int sortPermutation(int[] nums) {
-        int k = 0;
-        while(k < nums.length){
-            int a = nums[k];
-            int b = nums[a];
+class Solution { 
+    public int sortPermutation(int[] nums) { 
+        int k = 0; 
+        int ans = -1; 
 
-            if(a != b){
-                return k;
-            }
-            k++;
-        }
-        return 0;
-    }
+        while (k < nums.length) { 
+            if (nums[k] != k) { 
+                ans &= nums[k]; 
+            } 
+            k++; 
+        } 
+        
+        return Math.max(ans, 0); 
+    } 
 }
