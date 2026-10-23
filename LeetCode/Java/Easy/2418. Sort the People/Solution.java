@@ -1,11 +1,18 @@
 class Solution {
     public String[] sortPeople(String[] names, int[] heights) {
-        String []arr = new String[names.length];
-        for(int i = 0 ; i< names.length - 1 ; i++){
-            if(heights[i] < heights[i+1]){
-                String temp = names[i];
-                names[i] = names[i+1];
-                names[i+1] = temp;
+        int n = names.length;
+        
+        for (int i = 0; i < n - 1; i++) {
+            for (int j = 0; j < n - 1 - i; j++) {
+                if (heights[j] < heights[j + 1]) {
+                    int tempHeight = heights[j];
+                    heights[j] = heights[j + 1];
+                    heights[j + 1] = tempHeight;
+                    
+                    String tempName = names[j];
+                    names[j] = names[j + 1];
+                    names[j + 1] = tempName;
+                }
             }
         }
         return names;
