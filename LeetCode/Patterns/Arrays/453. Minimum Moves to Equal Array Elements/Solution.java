@@ -9,7 +9,6 @@ class Solution {
             }
             sum += nums[i];
         }
-        int ans = sum - min*n;
-        return ans;
+        return sum - min*n;
     }
 }
