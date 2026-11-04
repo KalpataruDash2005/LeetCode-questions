@@ -8,7 +8,7 @@
 Array, Hash Table, Math, Dynamic Programming, Sliding Window, Heap (Priority Queue)
 
 ### 🚀 Performance
-- **Runtime:** N/A
+- **Runtime:** Successfully Evaluated
 - **Memory:** N/A
 
 ---
