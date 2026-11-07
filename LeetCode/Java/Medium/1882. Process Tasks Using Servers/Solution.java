@@ -1,4 +1,4 @@
-
+import java.util.*;
 
 class Solution {
     public int[] assignTasks(int[] servers, int[] tasks) {
@@ -6,17 +6,21 @@ class Solution {
         int m = tasks.length;
 
         PriorityQueue<int[]> free = new PriorityQueue<>(
-            (a, b) -> a[0] != b[0]
-                ? Integer.compare(a[0], b[0])
-                : Integer.compare(a[1], b[1])
+            (a, b) -> {
+                if (a[0] != b[0])
+                    return Integer.compare(a[0], b[0]);
+                return Integer.compare(a[1], b[1]);
+            }
         );
 
-        PriorityQueue<int[]> busy = new PriorityQueue<>(
-            (a, b) -> a[0] != b[0]
-                ? Integer.compare(a[0], b[0])
-                : a[1] != b[1]
-                    ? Integer.compare(a[1], b[1])
-                    : Integer.compare(a[2], b[2])
+        PriorityQueue<long[]> busy = new PriorityQueue<>(
+            (a, b) -> {
+                if (a[0] != b[0])
+                    return Long.compare(a[0], b[0]);
+                if (a[1] != b[1])
+                    return Long.compare(a[1], b[1]);
+                return Long.compare(a[2], b[2]);
+            }
         );
 
         for (int i = 0; i < n; i++) {
@@ -33,16 +37,16 @@ class Solution {
             }
 
             while (!busy.isEmpty() && busy.peek()[0] <= time) {
-                int[] s = busy.poll();
-                free.offer(new int[]{s[1], s[2]});
+                long[] s = busy.poll();
+                free.offer(new int[]{(int) s[1], (int) s[2]});
             }
 
             int[] server = free.poll();
 
             ans[i] = server[1];
 
-            busy.offer(new int[]{
-                (int) (time + tasks[i]),
+            busy.offer(new long[]{
+                time + tasks[i],
                 server[0],
                 server[1]
             });
