@@ -8,8 +8,8 @@
 Array, Stack, Segment Tree, Queue, Sliding Window, Monotonic Stack, Monotonic Queue
 
 ### 🚀 Performance
-- **Runtime:** N/A
-- **Memory:** N/A
+- **Runtime:** 28 ms
+- **Memory:** 129.5 MB
 
 ---
 
