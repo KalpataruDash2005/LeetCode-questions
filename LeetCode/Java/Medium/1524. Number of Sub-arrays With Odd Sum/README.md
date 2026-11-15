@@ -1,6 +1,6 @@
 # 📝 1524. Number of Sub-arrays With Odd Sum (LeetCode)
 
-🔗 [Problem Link](https://leetcode.com/problems/number-of-sub-arrays-with-odd-sum)
+🔗 [Problem Link](https://leetcode.com/problems/number-of-sub-arrays-with-odd-sum/?envType=daily-question&envId=2026-11-15)
 
 ![Difficulty](https://img.shields.io/badge/Difficulty-Medium-orange) ![Language](https://img.shields.io/badge/Language-Java-blue)
 
