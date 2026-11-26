@@ -1,6 +1,6 @@
 # 📝 3360. Stone Removal Game (LeetCode)
 
-🔗 [Problem Link](https://leetcode.com/problems/stone-removal-game)
+🔗 [Problem Link](https://leetcode.com/problems/stone-removal-game/?envType=daily-question&envId=2026-11-26)
 
 ![Difficulty](https://img.shields.io/badge/Difficulty-Easy-brightgreen) ![Language](https://img.shields.io/badge/Language-Java-blue)
 
