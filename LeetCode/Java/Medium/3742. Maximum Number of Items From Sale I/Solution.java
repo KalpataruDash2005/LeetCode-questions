@@ -25,24 +25,15 @@ class Solution {
             }
         }
 
-        int[] bestPriceForVal = new int[n + 1];
-        Arrays.fill(bestPriceForVal, Integer.MAX_VALUE);
-
-        for (int[] item : items) {
-            int val = multCount[item[0]];
-            if (item[1] <= budget) {
-                bestPriceForVal[val] = Math.min(bestPriceForVal[val], item[1]);
-            }
-        }
-
-        int[] dp = new int[n * (n + 1) / 2 + 1];
+        int[] dp = new int[n * n + 1];
         Arrays.fill(dp, budget + 1);
         dp[0] = 0;
         int curMax = 0;
 
-        for (int val = 1; val <= n; val++) {
-            int price = bestPriceForVal[val];
-            if (price <= budget) {
+        for (int[] item : items) {
+            int price = item[1];
+            int val = multCount[item[0]];
+            if (price <= budget && (long) price < (long) val * minPrice) {
                 for (int curV = curMax; curV >= 0; curV--) {
                     if (dp[curV] + price < dp[curV + val]) {
                         dp[curV + val] = dp[curV] + price;
