@@ -1,6 +1,6 @@
 # 📝 3946. Maximum Number of Items From Sale I (LeetCode)
 
-🔗 [Problem Link](https://leetcode.com/problems/maximum-number-of-items-from-sale-i)
+🔗 [Problem Link](https://leetcode.com/problems/maximum-number-of-items-from-sale-i/?envType=daily-question&envId=2026-11-27)
 
 ![Difficulty](https://img.shields.io/badge/Difficulty-Medium-orange) ![Language](https://img.shields.io/badge/Language-Java-blue)
 
